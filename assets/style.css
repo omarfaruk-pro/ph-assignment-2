@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:wght@100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --orange:#FEA301;
+    --skyblue: #01ACFD;
+    --lightblue:#05D4DF;
+    --blue:#5D58EF;
+}
+body{
+    font-family: "Quicksand", serif;
+    font-size: 16px;
+    line-height: 1.2;
+    
+}
+p{
+    font-family: "Raleway", serif;
+    font-weight: 500;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* header */
+header{
+    padding: 20px 0;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+.logo span{
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+.header-content nav ul{
+    display: flex;
+}
+.header-content nav ul li a{
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 16px;
+}
+.header-content nav ul li:nth-child(1) a{
+    color: var(--orange);
+    font-weight: 700;
+}
+.header-content nav ul li:nth-child(2) a{
+    color: var(--skyblue);
+}
+.header-content nav ul li:nth-child(3) a{
+    color: var(--lightblue);
+}
+.header-content nav ul li:nth-child(4) a{
+    color: var(--blue);
+}
+.header-content .header-btn a{
+    color: white;
+    background-color: var(--orange);
+    padding: 10px 60px;
+    border-radius: 12px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* banner */
+.banner-content-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
