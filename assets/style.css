@@ -16,6 +16,7 @@ body{
     font-family: "Quicksand", serif;
     font-size: 16px;
     line-height: 1.2;
+    color: black;
     
 }
 p{
@@ -93,4 +94,36 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
+}
+.banner-content-row>div:first-child{
+    width: 58%;
+}
+.banner-content-row>div:last-child{
+    width: 42%;
+}
+.banner-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.banner-content h1 span:first-child{
+    color: var(--orange);
+}
+.banner-content h1 span:last-child{
+    color: var(--skyblue);
+}
+.banner-content p{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 24px 0;
+    font-family: "Quicksand", serif;
+}
+.banner-btn a{
+    display: inline-block;
+    padding: 10px 47px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    border-radius: 12px;
+    background-color: black;
 }
