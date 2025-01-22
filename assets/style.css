@@ -17,6 +17,7 @@ body{
     font-size: 16px;
     line-height: 1.2;
     color: black;
+    background-color: #F7F7F7;
     
 }
 p{
@@ -37,7 +38,15 @@ img{
     margin: 0 auto;
     padding: 0 15px;
 }
-
+.section-title{
+    margin-bottom: 80px;
+    text-align: center;
+}
+.section-title h2{
+    font-size: 46px;
+    color: black;
+    font-weight: 700;
+}
 /* header */
 header{
     padding: 20px 0;
@@ -126,4 +135,86 @@ header{
     color: white;
     border-radius: 12px;
     background-color: black;
+}
+
+/* curriculum */
+.curriculum{
+    padding: 60px 0;
+    background-image: url(./bg.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.curriculum-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-bottom: 80px;
+}
+.curriculum-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 40px;
+    gap: 32px;
+    border: 1px solid #DEF5FF;
+    background-color: white;
+    box-shadow: inset 0px 0px 28.2958px 0.943193px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+}
+.curriculum-card.card-1{
+    background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0) 40%), #fff;
+    border: 1px solid #DEF5FF;
+}
+.curriculum-card.card-2{
+    background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0) 40%), #FFFFFF;
+    border: 1px solid #FFF4DC;
+}
+.curriculum-card.card-3{
+    background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0) 40%), #FFFFFF;
+    border: 1px solid #F2E8FF;
+}
+.curriculum-card h2{
+    font-size: 24px;
+    color: #202020;
+    font-weight: 700;
+}
+.curriculum-card p{
+    color: #808080;
+    line-height: 1.7;
+}
+.curriculum-card a{
+    font-weight: 700;
+}
+.curriculum-card.card-1 a{
+    color: #64C8FF;
+}
+.curriculum-card.card-2 a{
+    color: #F0AA00;
+}
+
+.curriculum-card.card-3 a{
+    color: #8700FF;
+}
+.curriculum-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.curriculum-arrow button{
+    border: none;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
 }
