@@ -100,7 +100,9 @@ header{
     font-weight: 600;
     font-size: 20px;
 }
-
+.header-btn div{
+    display: none;
+}
 /* banner */
 .banner-content-row{
     display: flex;
@@ -139,7 +141,17 @@ header{
     border-radius: 12px;
     background-color: black;
 }
-
+.marquee-wrap{
+    margin-top: 30px;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+marquee{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--blue);
+}
 /* curriculum */
 .curriculum{
     padding: 60px 0;
@@ -307,20 +319,176 @@ header{
 }
 
 
-/* stories */
+/* footer */
+footer{
+    padding-top: 120px;
+    padding-bottom: 170px;
+    background-color: #3b01fd;
+}
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-row>div{
+    width: 25%;
+}
+.footer-row>div:first-child{
+    width: 35%;
+}
+.footer-logo a{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.footer-logo a span{
+    display: inline-block;
+    color: white;
+    max-width: 210px;
+    font-size: 42px;
+    font-weight: 700;
+}
+.footer-logo p{
+    font-size: 20px;
+    color: white;
+    margin-top: 35px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.footer-row h2{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+.footer-row ul{
+    margin-top: 32px;
+}
+.footer-row li{
+    margin-bottom: 20px;
+}
+.footer-link a{
+    color: #fff;
+    font-size: 20px;
+}
+.footer-social ul{
+    display: flex;
+    gap: 10px;
+}
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 60px 0px;
-gap: 80px;
 
-position: absolute;
-width: 1440px;
-height: 1018.02px;
-left: 0px;
-top: 1554px;
-
-background: url(image.png), linear-gradient(360deg, rgba(254, 163, 1, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+/* responsive */
+@media (max-width:992px) {
+    .container{
+        max-width: 740px;
+    }
+    header{
+        border-bottom: 1px solid var(--orange);
+    }
+    .header-content .header-btn a{
+        display: none;
+    }
+    .header-btn div{
+        display: block;
+        font-size: 30px;
+    }
+    .header-content nav{
+        display: none;
+    }
+    .banner{
+        padding-top: 28px;
+    }
+    .banner-content-row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-content-row>div:last-child {
+        width: 100%;
+    }
+    .banner-content-row>div:first-child {
+        width: 100%;
+    }
+    .curriculum-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .curriculum-card {
+        padding: 30px 30px;
+        gap: 20px;
+    }
+    .curriculum-arrow {
+        display: none;
+    }
+    .stories-grid {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .stories-card.big {
+        grid-column: span 8;
+        grid-row: span 1;
+    }
+    .stories-card {
+        grid-column: span 4;
+    }
+    .footer-row {
+        flex-wrap: wrap;
+    }
+    .footer-row>div:first-child {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:768px) {
+    .container{
+        max-width: 540px;
+    }
+    .curriculum-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 576px) {
+    .banner-content h1 {
+        font-size: 32px;
+    }
+    .banner-content-row {
+        gap: 20px;
+    }
+    .banner-content p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin: 18px 0;
+    }
+    .section-title h2 {
+        font-size: 26px;
+    }
+    .curriculum {
+        padding: 40px 0;
+    }
+    .section-title {
+        margin-bottom: 20px;
+    }
+    .curriculum-grid {
+        margin-bottom: 0px;
+    }
+    .stories {
+        padding: 40px 0;
+    }
+    .stories-card.big {
+        display: none;
+    }
+    .stories-content {
+        padding: 22px;
+    }
+    .stories-date {
+        top: -18px;
+        font-size: 9px;
+    }
+    footer {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    .footer-row>div {
+        width: 100%;
+    }
+    .footer-social{
+        margin-top: 20px;
+    }
+}
